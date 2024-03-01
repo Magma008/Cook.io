@@ -5,7 +5,6 @@ import meals from "./data"
 const Carousel = () => {
     const [num, setNum] = useState(0)
     let {id, image , country, name, data} = meals[num]
-    // console.log(image+1, image)
 
 
     const numCheck = (checking) => {
@@ -21,12 +20,10 @@ const Carousel = () => {
 
     const addHandler = () => {
         setNum(numCheck(num + 1))
-        console.log(num);
     }
 
     const minusHandler = () => {
         setNum(numCheck(num - 1))
-        console.log(num);
     }
 
     const randomHandler = () => {
